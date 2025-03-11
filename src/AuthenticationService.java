@@ -6,8 +6,8 @@ public class AuthenticationService implements IAuthenticationService {
 
     // TODO Now: Add a constructor to initialize the users list with the default user
     public AuthenticationService(){
+        users = new ArrayList<User>();
         users.add(new User("default", "default"));
-
     }
 
     // TODO Now: Implement the signUp method to add a new user to the list if the username is not taken and return the user; returns null otherwise
